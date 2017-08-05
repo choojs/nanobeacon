@@ -9,7 +9,7 @@ function nanobeacon (url, data) {
 
   assert.equal(typeof url, 'string', 'nanobeacon: url should be type string')
   assert.equal(typeof data, 'object', 'nanobeacon: data should be type object')
-  assert.equal(typeof window, 'object', 'nanobeacon: no window found object found')
+  assert.equal(typeof window, 'object', 'nanobeacon: no window object found')
   assert.ok(window.navigator && window.navigator.sendBeacon, 'nanobeacon: window.navigator.beacon not found. Consider using a polyfill')
 
   try {
