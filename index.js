@@ -20,6 +20,6 @@ function nanobeacon (url, data) {
 
   assert.ok(json.length < MAX_SIZE, 'nanobeacon: data should be smaller than ' + MAX_SIZE + ' bytes. Was ' + json.length + ' bytes')
 
-  var blob = new window.Blob([ json ])
+  var blob = new window.Blob([ json ], { type: 'text/plain; charset=UTF-8' })
   return window.navigator.sendBeacon(url, blob)
 }
