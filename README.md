@@ -25,7 +25,7 @@ document.body.innerHTML = '<h1>message status: ' + msg + '</h1>'
 ### `ok = nanobeacon(url, [data])`
 Send a request with a payload to a remote host. 
 
-If user has enabled Do Not Track (`window.navigator.doNotTrack`) then no beacon will be send and nanobeacon will return `false`.
+If user has enabled Do Not Track (`window.navigator.doNotTrack`) then no beacon will be sent and nanobeacon will return `false`.
 
 ## See Also
 - [dom/navigator/sendBeacon](http://devdocs.io/dom/navigator/sendbeacon)
