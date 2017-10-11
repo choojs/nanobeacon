@@ -22,6 +22,6 @@ function nanobeacon (url, data) {
 
   var blob = new window.Blob([ json ], { type: 'text/plain; charset=UTF-8' })
 
-  if (window.navigator.doNotTrack) return false
+  if (window.navigator.doNotTrack || !window.navigator.sendBeacon) return false
   return window.navigator.sendBeacon(url, blob)
 }
